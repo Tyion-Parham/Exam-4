@@ -8,7 +8,7 @@ private:
     std::string weapon;
 
 public:
-    Warrior(std::string cn, std::string wep);
+    Warrior();
     virtual void attack();
 };
 
