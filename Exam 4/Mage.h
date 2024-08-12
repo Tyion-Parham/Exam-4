@@ -8,7 +8,6 @@ class Mage :
 private:
     const std::vector<std::string> spellBook = {"Fireball", "Magic Missile",
         "Chain Lightning", "Misty Step", "Power Word Kill", "Cone of Cold"};
-
 public:
     Mage();
     std::string pickSpell();

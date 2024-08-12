@@ -128,14 +128,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Archetype.h" />
+    <ClInclude Include="Game.h" />
     <ClInclude Include="Hero.h" />
     <ClInclude Include="Mage.h" />
+    <ClInclude Include="Movie.h" />
+    <ClInclude Include="Playable.h" />
+    <ClInclude Include="Record.h" />
     <ClInclude Include="Warrior.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Archetype.cpp" />
+    <ClCompile Include="Game.cpp" />
     <ClCompile Include="Hero.cpp" />
     <ClCompile Include="Mage.cpp" />
+    <ClCompile Include="Movie.cpp" />
+    <ClCompile Include="Record.cpp" />
     <ClCompile Include="Test.cpp" />
     <ClCompile Include="Warrior.cpp" />
   </ItemGroup>

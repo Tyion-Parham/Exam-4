@@ -1,13 +1,16 @@
 #pragma once
-#include "Archetype.h"
+#include "Warrior.h"
+#include "Mage.h"
 class Hero
 {
 private:
 	std::string name;
-	Archetype* className;
-
+	//Archetype* className;
 public:
-	Hero(std::string name, Archetype& cn);
+	Archetype* className;
+	Hero();
+	Hero(std::string name, Archetype* cn);
+	Hero operator=(Hero& hr);
 	void act();
 };
 

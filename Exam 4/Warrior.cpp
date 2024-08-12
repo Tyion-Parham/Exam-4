@@ -1,12 +1,13 @@
 #include "Warrior.h"
 #include <iostream>
 
-Warrior::Warrior(std::string cn, std::string wep) : weapon(wep) 
+Warrior::Warrior()
 {
-	setClassName(cn);
+	weapon = "Halbert";
+	setClassName("Warrior");
 }
 
 void Warrior::attack()
 {
-	std::cout << ", the " << getClassName << ", swings their " << weapon;
+	std::cout << ", the " << getClassName() << ", swings their " << weapon;
 }

@@ -1,9 +1,14 @@
 #include "Hero.h"
 #include <iostream>
 
-Hero::Hero(std::string n, Archetype& cn) : name(n)
+Hero::Hero(){}
+
+Hero::Hero(std::string n, Archetype* cn) : name(n), className(cn) {}
+
+Hero Hero::operator=(Hero& hr)
 {
-	cn.setClassName(cn.getClassName());
+	Hero temphero(name, className);
+	return temphero;
 }
 
 void Hero::act()

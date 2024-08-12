@@ -12,6 +12,7 @@ std::string Mage::pickSpell()
 	std::string spell = spellBook[rand() % spellBook.size()];
 	return spell;
 }
+
 void Mage::castSpell(std::string spell)
 {
 	std::cout << "cast " << spell << ".";
@@ -19,6 +20,6 @@ void Mage::castSpell(std::string spell)
 
 void Mage::attack()
 {
-	std::cout << ", the " << getClassName << ", ";
+	std::cout << ", the " << getClassName() << ", ";
 	castSpell(pickSpell());
 }
